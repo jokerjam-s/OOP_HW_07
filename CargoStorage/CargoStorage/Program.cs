@@ -1,10 +1,14 @@
-﻿namespace CargoStorage
+﻿using CargoStorage.Controller;
+
+namespace CargoStorage
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            CargoController controller = new CargoController();
+
+            controller.Run();
         }
     }
 }
